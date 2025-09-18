@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/d15e7406bf.js" crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "aGs37gqf0j8DiYF_L",
+      });
+   })();
+</script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="sinan icon2.jpg" alt="icon" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>SOFTWARE DEVELOPER</p>
+                <h1> Hi, I 'm <span>MOHAMMED SINAN A</span><br> From "Calicut"</h1>
+
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------------ ABOUT---------- =---------------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about photo.png">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi there! I'm someone who thrives on curiosity and creativity. Based in Kozhikode, Kerala—a place rich in culture and coastal charm—I enjoy exploring ideas, learning new things, and finding meaning in everyday moments. Whether it's diving into a new hobby, solving a tricky problem, or just sharing a good laugh, I bring energy and thoughtfulness to everything I do.
+I value connection, growth, and authenticity. Life’s too short for surface-level conversations, so I love digging deeper—whether it’s with people, passions, or purpose. I’m always up for a challenge, and I believe that even small steps can lead to big transformations.
+</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software Devoloper</span><br>JAVA SCRIPT</li>
+                            <li><span>CSS</span><br>HTML</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2025-current</span><br>Devoloper in bridgeon</li>
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Plus two</span><br>Umbichy hajee higher secondary school</li>
+                            <li><span>DEGREE</span><br>VEDAVYASA college of arts and science</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------services------------------------------------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-html5 fa-bounce" style="color: #FFD43B;"></i>
+
+                    <h2>HTML</h2>
+                    <p>HTML, which stands for HyperText Markup Language, is the foundational language used to create and structure content on the web. It allows developers to define the layout and elements of a webpage using a system of tags and attributes. These tags tell the browser how to display text, images, links, videos, and other components, making HTML essential for building websites. Unlike programming languages that perform logic or calculations, HTML is a markup language—it organizes content rather than processes it. It works closely with CSS (for styling) and JavaScript (for interactivity) to create rich, dynamic web experiences. Whether you're viewing a simple blog or a complex e-commerce site, HTML is quietly working behind the scenes to make it all possible.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-css fa-bounce" style="color: #FFD43B;"></i>
+
+                    <h2>CSS</h2>
+                    <p>CSS, or Cascading Style Sheets, is a language used to control the presentation and layout of web pages. While HTML provides the structure and content, CSS defines how that content should look—such as colors, fonts, spacing, and positioning. By separating design from content, CSS makes websites easier to maintain and more visually consistent. Developers can apply styles across multiple pages using external stylesheets, saving time and reducing repetition. CSS also adapts to different devices and screen sizes, enabling responsive design that looks great on desktops, tablets, and phones alike.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-square-js fa-bounce" style="color: #FFD43B;"></i>
+                    <h2>JAVA SCRIPT</h2>
+                    <p>JavaScript is a versatile and powerful programming language primarily used to create dynamic and interactive features on websites. Unlike HTML and CSS, which handle structure and style, JavaScript enables real-time updates, user interactions, animations, and multimedia control. It allows developers to respond to user actions—like clicks, form submissions, or keyboard input—without needing to reload the page. JavaScript can also manipulate HTML and CSS directly, making it essential for modern web development. Beyond the browser, JavaScript runs on servers using platforms like Node.js, allowing developers to build full-stack applications with a single language.
+</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- ---------------------------------portfolio-------------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="clone.task.png">
+                    <div class="layer">
+                        <h3>CLONE</h3>
+                        <p>I Created a clone of Trivago bookiing app</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="navbar.png">
+                    <div class="layer">
+                        <h3>NAV BAR</h3>
+                        <p>I created a nav bar for W3school</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="work 5.png">
+                    <div class="layer">
+                        <h3>Online shopping App</h3>
+                        <p>The app connets you yo the talented people around the world.
+                            Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div> -->
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -------------------------==contact-------------------------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-regular fa-paper-plane"></i>sinanshanu517@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>8714383804</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/s_1nan_?igsh=MWtuNno3eTk4cTgxdw=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="CVV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form class="contact-right">
+                        <input type="text" name="Name" placeholder="Your Name" required id="name">
+                        <input type="email" name="email" placeholder="your Email" required id="email">
+                        <textarea name="Message" rows="6" placeholder="Your message" id="message"></textarea>
+                        <button type="submit" class="btn btn2" onclick="sendmail()">Submit</button>
+                    </form>
+                </div>
+
+
+
+            </div>
+
+        </div>
+        
+        <div class="copyright">
+            <p>copyright @ sinan.made with<i class="fa-solid fa-heart"></i> my personal portfolio</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    <script>
+        var sidemenu =document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right ="0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+            
+        }
+    </script>
+    <script>
+        function sendmail(){
+            var params={
+                name:document.getElementById("name").value,
+                email:document.getElementById("email").value,
+                message:document.getElementById("message").value,
+
+            };
+        
+        const serviceID="service_fpr9oru";
+        const templateID="template_4nu4rnf"
+
+        emailjs.send(serviceID,templateID,params)
+        .then(
+            res =>{
+                document.getElementById("name").value ="";
+            document.getElementById("email").value="";
+        document.getElementById("message").value="";
+        console.log(res);
+        alert("you message sent succesfully");
+
+    }
+
+        )
+        .catch((err)=> console.log(err));
+
+        
+        }
+    </script>
+</body>
+
+</html>

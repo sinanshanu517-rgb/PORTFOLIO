@@ -23,15 +23,23 @@ body{
     padding: 10px 10%;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+    background-color: #080808;
+
+    position: fixed;   /* 👈 new */
+    top: 0;            /* 👈 new */
+    left: 0;           /* 👈 new */
+    width: 100%;       /* 👈 full width */
+    z-index: 1000;     /* 👈 keeps it on top */
 }
+
 .logo{
     width: 140px;
+    padding-left: 50px;
 }
 nav ul li{
     display: inline-block;
@@ -65,11 +73,11 @@ nav ul li a:hover::after{
 
 
 }
-.header-text{
-    margin-top: 20%;
+.header-text {
+    margin-top: 150px; /* 👈 adjust as needed */
     font-size: 30px;
-
 }
+
 .header-text h1{
     font-size: 50px;
     margin-top: 20px;
